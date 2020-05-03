@@ -85,7 +85,7 @@ def dispTimer(sender):
 
     if int(timer_minute) < 0:
         app.title = "TIME UP"
-        if int(timer_second) == 58:
+        if int(timer_minute) == -1 and int(timer_second) == 58:
             rumps.notification(message="作業をやめてください！！！", title="TIME UP！", subtitle="")
 
 
